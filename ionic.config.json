@@ -1,0 +1,7 @@
+{
+  "name": "captchaV2App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

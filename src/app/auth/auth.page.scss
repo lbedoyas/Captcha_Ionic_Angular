@@ -1,0 +1,46 @@
+.container_auth{
+  width: 100%;
+  background-color: blueviolet;
+  height: 100vh;
+}
+
+
+.login__group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login__form{
+  width: 80%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control{
+  width: 100%;
+}
+
+.login__img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.login__login{
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.login__captcha{
+  margin-top: 30px;
+  margin-bottom: 20;
+}
+
+.login__submit{
+  margin-top: 50px;
+}

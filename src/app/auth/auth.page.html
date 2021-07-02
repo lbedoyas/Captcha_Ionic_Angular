@@ -1,0 +1,48 @@
+
+
+<ion-content>
+
+  <div class="container_auth">
+    <div class="login__group">
+
+
+
+      <div class="login__form">
+        <form [formGroup]="aFormGroup" (ngSubmit)="login(aFormGroup.value)">>
+          <div class="login__img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png">
+          </div>
+
+          <div class="login__login">
+            <input type="text"
+            class="form-control"
+            placeholder="usuario"
+            formControlName="usuario">
+          </div>
+          <div class="login__password">
+            <input type="password"
+            class="form-control"
+            placeholder="password"
+            formControlName="password">
+          </div>
+
+          <div class="login__captcha">
+            <ngx-recaptcha2 #captchaElem
+              [siteKey]="siteKey"
+              formControlName="recaptcha">
+            </ngx-recaptcha2>
+          </div>
+          <div class="login__submit">
+            <ion-button type="submit"
+             expand="full"
+             [disabled]="aFormGroup.invalid">Iniciar Seccion</ion-button>
+          </div>
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</ion-content>
